@@ -5,14 +5,13 @@ include '.\includes\templates\header.php'; // Se incluye el encabezado de la pá
 <body>
 <div class="videoplayer">
   <!-- Sección del reproductor de video -->
-  <video id="videoPlayer" controls style="max-width: 250%; max-height: 100%;">
-    <source src="../videos/Bleed -The Kid Laroi.mp4" type="video/mp4"> <!-- Fuente del video -->
+  <video id="videoPlayer" src="../videos/Bleed - The Kid Laroi.mp4" controls style="max-width: 250%; max-height: 100%;">
+    
     Tu navegador no soporta el elemento de video.
   </video>
   
   <!-- Sección del reproductor de audio -->
-  <audio id="audioPlayer" controls style="display:none;">
-    <source src="../audios/Alex Warren - Before You Leave Me.mp3" type="audio/mp3"> <!-- Fuente del audio -->
+  <audio id="audioPlayer" src="../audios/Alex Warren - Before You Leave Me.mp3" controls style="">
     Tu navegador no soporta el elemento de audio.
   </audio>
   
@@ -28,7 +27,7 @@ include '.\includes\templates\header.php'; // Se incluye el encabezado de la pá
     <button class="botRep" onclick="toggleFullScreen()">FullScreen</button>
     
     <!-- Control de volumen -->
-    - Volumen +<input class="barravolumen" type="range" id="volumeControl" min="0" max="1" step="0.01" onchange="changeVolume()">
+    - Volumen +<input class="barravolumen" type="range" id="volumeControl" min="0" max="1" step="0.1" onchange="changeVolume()">
   </div>
   
   <!-- Barra de progreso -->
@@ -38,14 +37,14 @@ include '.\includes\templates\header.php'; // Se incluye el encabezado de la pá
   
   <!-- Selección de playlist -->
   <div>
-    <select id="playlist" onchange="changeMedia()">
+    
       <!-- Opciones de la playlist -->
-      <option value="../videos/Bleed - The Kid Laroi.mp4">Bleed</option>
-      <option value="../videos/Tear Me Apart - The Kid Laroi.mp4">Tear Me Apart</option>
-      <option value="../videos/Heaven - The Kid Laroi.mp4">Heaven</option>
-      <option value="../videos/Too Much - The Kid Laroi.mp4">Too Much</option>
-      <option value="../audios/Alex Warren - Before You Leave Me .mp3">Audio - Before You Leave Me</option>
-    </select>
+      <a onclick=bleed()>Bleed</a>
+      <a onclick=tear()>Tear Me Apart</a>
+      <a onclick=heaven()>Heaven</a>
+      <a onclick=tooMuch()>Too Much</a>
+
+      <a onclick=alex()>Before You Leave Me</a>
   </div> 
 </div>
 

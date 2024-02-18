@@ -1145,3 +1145,14 @@
 .video-controls {
   margin-top: 10px; /* Espaciado superior */
 }
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-overflow-button,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-volume-slider-container,
+    video::-webkit-media-controls-mute-button,
+    video::-webkit-media-controls-fullscreen-button {
+      display: none !important;
+}
