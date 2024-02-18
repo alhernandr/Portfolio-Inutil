@@ -1156,3 +1156,21 @@ video::-webkit-media-controls-volume-slider-container,
     video::-webkit-media-controls-fullscreen-button {
       display: none !important;
 }
+
+.cuadro {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  transition: all 0.5s ease;
+}
+
+.cuadro.animado {
+  background-color: #ff5733; /* Cambia a un color naranja */
+  width: 300px; /* Cambia el tamaño */
+  height: 300px; /* Cambia el tamaño */
+}

@@ -32,6 +32,7 @@
           
           <div class="navbar__listItem">
             <ul>
+              <li class="item"><a href="/jquery.php">JQuery</a></li>
               <li class="item"><a href="/reproductorVideo.php">Videos</a></li>
               <li class="item"><a href="/indexDB.php">IndexDB</a></li>
               <li class="item"><a href="/preferencias.php">Preferencias</a></li>
